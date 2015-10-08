@@ -1,0 +1,15 @@
+package demo;
+
+public class ArrayTypeError {
+
+	public static void main(String[] args) {
+		Dog[] kennel = {new Dog(), new Dog()};
+		
+		for (Dog d: kennel) d.speak();
+		
+		Object[] things = kennel;
+		
+		things[0] = new Cat();
+	}
+
+}

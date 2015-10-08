@@ -1,0 +1,16 @@
+package demo;
+
+import java.util.Collection;
+
+public class GenericsWildcardExample3 {
+
+	public static <T> void add1 (T obj, Collection<? super T> c) {
+		c.add(obj);
+	}
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

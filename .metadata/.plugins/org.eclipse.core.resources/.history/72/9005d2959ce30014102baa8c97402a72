@@ -1,0 +1,18 @@
+package demo;
+import java.util.List;
+import java.util.ArrayList;
+
+public class GenericWildcardExample1 {
+
+	public static void main(String[] args) {
+		List<Dog> kennel = new ArrayList<Dog>();
+		kennel.add( new Dog() );
+		kennel.add( new Dog() );
+		List<?> objs = kennel;
+		
+		
+		for (Object o: objs) {
+			System.out.println("String representation: " + o);
+		}
+	}
+}

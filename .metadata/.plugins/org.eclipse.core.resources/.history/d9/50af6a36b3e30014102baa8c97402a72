@@ -1,0 +1,11 @@
+package demo;
+
+public class GenericsWildcardExample3 {
+
+	public static void main(String[] args) {
+		public static <T> void add1 (T obj, Collection<? super T> c) {
+			
+		}
+	}
+
+}
